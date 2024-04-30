@@ -2135,12 +2135,13 @@ textarea.w-input, textarea.w-select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 10dvh;
   display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  overflow: hidden;
 }
 
 .navbar-logo-left-container {
@@ -2340,15 +2341,22 @@ textarea.w-input, textarea.w-select {
 .about-container {
   background-color: var(--light);
   border-bottom: 1px solid #e4ebf3;
-  padding: 80px 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 6% 0% 2%;
+  padding: 2%;
+  display: flex;
   position: relative;
 }
 
 .hero-wrapper {
+  flex-flow: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
 }
 
@@ -2495,10 +2503,10 @@ textarea.w-input, textarea.w-select {
 .landing-visual {
   background-color: var(--dark);
   width: 100%;
-  height: 60dvh;
-  margin-bottom: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  max-width: 100%;
+  height: 70dvh;
+  margin: 5% 0%;
+  padding: 5%;
   display: block;
   overflow: hidden;
 }
@@ -2519,13 +2527,15 @@ textarea.w-input, textarea.w-select {
   align-items: center;
   width: 100%;
   height: 60vh;
-  margin-top: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 2%;
+  padding: 2%;
   display: flex;
+}
+
+.exhibit-container.home-containers {
+  justify-content: center;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .artists-wrapper {
@@ -2540,13 +2550,18 @@ textarea.w-input, textarea.w-select {
 }
 
 .div-block-6 {
+  width: auto;
+  max-width: 100%;
   height: 100vh;
 }
 
 .works-container {
   background-color: var(--dark);
-  padding-top: 20px;
-  padding-bottom: 60px;
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
 }
 
 .image-grid {
@@ -2559,6 +2574,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .grid-image-wrapper {
+  width: auto;
   height: 350px;
   overflow: hidden;
 }
@@ -2578,7 +2594,7 @@ textarea.w-input, textarea.w-select {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  display: none;
+  display: block;
   overflow: hidden;
 }
 
@@ -2586,6 +2602,8 @@ textarea.w-input, textarea.w-select {
   z-index: 100;
   color: var(--light);
   text-align: left;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(25, 25, 25, .8);
   white-space: normal;
   justify-content: flex-start;
   margin-left: 20px;
@@ -2641,7 +2659,11 @@ textarea.w-input, textarea.w-select {
 
 .artists-container {
   background-color: var(--light);
-  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
 }
 
 .heading-7 {
@@ -2702,11 +2724,11 @@ textarea.w-input, textarea.w-select {
 .artist-profile {
   object-fit: fill;
   align-items: center;
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 1%;
+  padding: .5% 1%;
   display: flex;
   position: static;
 }
@@ -2726,7 +2748,7 @@ textarea.w-input, textarea.w-select {
   border-radius: 200%;
   width: 100%;
   height: auto;
-  margin: 10px;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -2739,6 +2761,7 @@ textarea.w-input, textarea.w-select {
 
 .project-page-title {
   text-align: center;
+  margin: 2% 5%;
   font-family: ethnocentric, sans-serif;
   font-size: 54px;
   position: static;
@@ -2749,44 +2772,48 @@ textarea.w-input, textarea.w-select {
 }
 
 .artist-description {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
   grid-template-rows: auto auto;
   grid-template-columns: .25fr 1.5fr;
   grid-auto-columns: 1fr;
   justify-items: start;
+  margin: 1%;
   display: grid;
 }
 
 .text-artist-bio {
   object-fit: fill;
-  margin-left: -30px;
-  padding-bottom: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 21.6px;
 }
 
-.text-block-7 {
-  padding-top: 10px;
-  font-family: Pixelifysans Variablefont Wght, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.text-block-8 {
+.text-block-7, .text-block-8 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   font-family: Pixelifysans Variablefont Wght, sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 
 .bio {
-  width: 20dvw;
+  width: auto;
+  height: auto;
+  margin: .5%;
+  padding: .5%;
   display: flex;
 }
 
 .contact {
-  width: 20dvw;
+  width: auto;
+  height: auto;
+  margin: .5%;
+  padding: .5%;
 }
 
 .svg-icon {
@@ -2807,6 +2834,7 @@ textarea.w-input, textarea.w-select {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin: 1%;
   display: flex;
 }
 
@@ -2815,25 +2843,48 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
-.text-block-9 {
+.handle-text {
+  color: var(--dark);
   flex-flow: row;
+  width: 100%;
+  height: auto;
+  padding-top: 3%;
   font-family: Montserrat, sans-serif;
+  font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
   display: flex;
 }
 
 .social-media-grid {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 1%;
+  grid-row-gap: 2%;
   grid-template-rows: auto auto auto;
   grid-template-columns: .6fr .5fr;
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
-  margin-left: -30px;
+  width: auto;
+  height: auto;
+  margin-bottom: .5%;
+  margin-left: .5%;
+  margin-right: .5%;
+  padding-bottom: .5%;
+  padding-left: .5%;
+  padding-right: .5%;
   display: grid;
 }
 
-.handle, .div-block-24, .div-block-25 {
+.handle {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: .5%;
+  padding: .5%;
+  display: flex;
+}
+
+.div-block-24, .div-block-25 {
   margin-top: 10px;
 }
 
@@ -2845,18 +2896,29 @@ textarea.w-input, textarea.w-select {
   margin-bottom: 10px;
 }
 
+.artist-bio {
+  width: auto;
+  height: auto;
+  margin: 0% .5% .5%;
+  padding: 0% .5% .5%;
+}
+
 .project-page-name {
   color: #8f8a8a;
-  margin-top: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 5%;
   font-family: Pixelifysans Variablefont Wght, sans-serif;
   font-size: 24px;
 }
 
 .title-name {
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
   flex-flow: column;
   align-items: center;
   width: 100vw;
-  margin-top: 20px;
+  margin-top: 0;
   display: flex;
 }
 
@@ -2864,12 +2926,12 @@ textarea.w-input, textarea.w-select {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   width: 100vw;
   height: auto;
-  margin: 10px;
-  padding: 10px;
+  margin: 1%;
+  padding: 2%;
   display: grid;
 }
 
@@ -2878,13 +2940,14 @@ textarea.w-input, textarea.w-select {
 }
 
 .artist-statement {
-  padding-bottom: 10px;
+  padding-bottom: 0;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   line-height: 21.6px;
 }
 
 .heading-13 {
+  margin: 2% 0%;
   font-family: ethnocentric, sans-serif;
   font-weight: 400;
 }
@@ -2910,10 +2973,8 @@ textarea.w-input, textarea.w-select {
   flex-flow: column;
   align-items: center;
   width: 100vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 2%;
+  padding: 1%;
   display: flex;
   position: relative;
 }
@@ -3392,9 +3453,13 @@ textarea.w-input, textarea.w-select {
 }
 
 .sm-icon-wrapper {
+  justify-content: center;
+  align-items: center;
   width: 3em;
   height: auto;
-  padding: 2px;
+  margin: .5%;
+  padding: .5%;
+  display: flex;
 }
 
 .social-media-icon {
@@ -3440,7 +3505,8 @@ textarea.w-input, textarea.w-select {
 
 .all-link.grid-image-wrapper.link-block-2 {
   width: 100%;
-  height: 29%;
+  height: 100%;
+  overflow: auto;
 }
 
 .heading-15.heading-14 {
@@ -3493,6 +3559,11 @@ textarea.w-input, textarea.w-select {
 .proj-img-wrapper {
   width: 100%;
   height: auto;
+  margin: .5%;
+}
+
+.view-project-button.project-button, .portfolio-button.project-button {
+  padding: .5%;
 }
 
 .project-img {
@@ -3769,6 +3840,7 @@ textarea.w-input, textarea.w-select {
   outline: 3px solid #fff;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-bottom: 9px;
   padding-left: 178px;
   padding-right: 208px;
   font-family: Pixelifysans Variablefont Wght, sans-serif;
@@ -3802,16 +3874,20 @@ textarea.w-input, textarea.w-select {
   padding-right: 10px;
 }
 
-.div-block-34 {
+.landing-spacer {
   z-index: 200;
+  aspect-ratio: auto;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
-  display: block;
-  position: absolute;
-  overflow: hidden;
+  display: flex;
+  position: static;
+  overflow: visible;
 }
 
 .image-16 {
+  z-index: 100;
   width: 50%;
   height: auto;
   position: relative;
@@ -4073,7 +4149,7 @@ textarea.w-input, textarea.w-select {
   display: none;
 }
 
-.image-20 {
+.slider-skinny {
   object-fit: cover;
   width: 100%;
   height: 120%;
@@ -4085,8 +4161,8 @@ textarea.w-input, textarea.w-select {
 }
 
 .image-21.image-20 {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 120%;
 }
 
 .slider-5 {
@@ -4101,6 +4177,47 @@ textarea.w-input, textarea.w-select {
 
 .image-22 {
   width: 100%;
+}
+
+.optional-description.artist-statement {
+  color: #666;
+  text-align: left;
+  margin-bottom: .5%;
+  margin-left: .5%;
+  margin-right: .5%;
+  padding-left: .5%;
+  padding-right: .5%;
+  font-size: 1em;
+}
+
+.image-23, .image-24 {
+  width: 100%;
+  height: auto;
+}
+
+.image-25 {
+  object-fit: cover;
+}
+
+.image-26 {
+  width: auto;
+  height: 80%;
+  margin: 5%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: auto;
+}
+
+.title-spacer {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  position: relative;
 }
 
 @media screen and (max-width: 991px) {
@@ -4161,6 +4278,29 @@ textarea.w-input, textarea.w-select {
   .works-grid-wrapper {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .project-page-title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .project-page-name {
+    width: 100%;
+    max-width: 100%;
+    margin: 5%;
+  }
+
+  .title-name {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+  }
+
+  .heading-13 {
+    margin-top: 10px;
   }
 
   .slider-thumbs_component {
@@ -4352,7 +4492,7 @@ textarea.w-input, textarea.w-select {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_0cdc3d80-828a-8a9b-22e2-bbad81997058-2fbfa3b4, #w-node-_0cdc3d80-828a-8a9b-22e2-bbad81997060-2fbfa3b4, #w-node-_0cdc3d80-828a-8a9b-22e2-bbad81997061-2fbfa3b4 {
+#w-node-_0cdc3d80-828a-8a9b-22e2-bbad81997058-2fbfa3b4, #w-node-_0cdc3d80-828a-8a9b-22e2-bbad81997061-2fbfa3b4 {
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
@@ -4361,7 +4501,7 @@ textarea.w-input, textarea.w-select {
   grid-template-columns: 5fr 9.5fr;
 }
 
-#w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-84567102, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-84567102, #w-node-_097eba27-2074-e046-db95-4bb40be42e94-79dbb917, #w-node-e91a868b-ad16-3b57-246e-c7eec98c1d61-79dbb917, #w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-d554a785, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-d554a785, #w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-e6fffb1c, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-e6fffb1c, #w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-d0281a2c, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-d0281a2c, #w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-5b25b3bf, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-5b25b3bf, #w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-263d3453, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-263d3453, #w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-40705aee, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-40705aee, #w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-71ef8912, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-71ef8912 {
+#w-node-_2f359b9d-b60e-e912-083e-269a452ddebc-84567102, #w-node-_5585270c-c8b9-4f3d-5fa7-242abaac8039-84567102, #w-node-_097eba27-2074-e046-db95-4bb40be42e94-79dbb917, #w-node-e91a868b-ad16-3b57-246e-c7eec98c1d61-79dbb917 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
